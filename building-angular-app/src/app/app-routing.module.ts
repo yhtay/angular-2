@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
+import { TransfersComponent } from './components/transfers/transfers.component';
+import { AppComponent } from './app.component';
 
-const routes: Routes = [];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+export const APP_ROUTES: Routes = [{
+    path: '',
+    redirectTo: 'transfer',
+    pathMatch: 'full'
+  },
+  {
+    path: 'transfer',
+    component: TransfersComponent
+  }];
