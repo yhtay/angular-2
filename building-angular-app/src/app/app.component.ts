@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TransfersComponent } from './components/transfers/transfers.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app.component.css'],
   standalone: true,
   imports: [
-    TransfersComponent,
+    NavBarComponent,
     CommonModule,
     RouterOutlet
   ]
